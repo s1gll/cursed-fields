@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cfff9fba5a286740b886fbba19c5aec, type: 3}
+  m_Name: StoneHeart Upgrade Lvl 3
+  m_EditorClassIdentifier: 
+  _title: Stone Heart
+  _description: +0.2 health regen.
+  _level: Level 3
+  _icon: {fileID: 6954847684770999777, guid: ff04e4a59675fad49995a9d7f974bc3d, type: 3}
+  _nextLevelPrefab: {fileID: 11400000, guid: ad4d67097940535408a24f4e6001cca3, type: 2}
+  _passiveItemScriptableObject: {fileID: 11400000, guid: 885f5da553b938a47972f4d965c90642, type: 2}
+  _targetPassiveItemClassName: StoneHeart

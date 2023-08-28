@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cfff9fba5a286740b886fbba19c5aec, type: 3}
+  m_Name: HoleyBoots Upgrade Lvl 4
+  m_EditorClassIdentifier: 
+  _title: Holey Boots
+  _description: Increases movement speed by 10%.
+  _level: Level 4
+  _icon: {fileID: 21300000, guid: 17d4250db515fde428a9a379c34691dc, type: 3}
+  _nextLevelPrefab: {fileID: 11400000, guid: 4048ed36db9b95645bb99efa6e9dd1f5, type: 2}
+  _passiveItemScriptableObject: {fileID: 11400000, guid: 1759c09fb6ad4374b81b7078cf260fb6, type: 2}
+  _targetPassiveItemClassName: HoleyBoots

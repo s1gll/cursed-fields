@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb13a105b9745be4199e48ac7f652480, type: 3}
+  m_Name: StoneHeart Upgrade Lvl 1(Base)
+  m_EditorClassIdentifier: 
+  _title: Stone Heart
+  _description: Slowly restores the character's health.
+  _level: Level 1
+  _icon: {fileID: 6954847684770999777, guid: ff04e4a59675fad49995a9d7f974bc3d, type: 3}
+  _nextLevelPrefab: {fileID: 11400000, guid: 08d0be6320b60d743a2db36c3754c8cf, type: 2}
+  _passiveItemPrefab: {fileID: 5797547704746368291, guid: d4f6694b5924d9d40a037e960fbfbe71, type: 3}

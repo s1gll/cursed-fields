@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1181011d9a3b52e45b9f270a5d46bc53, type: 3}
+  m_Name: SolarAura Upgrade Lvl 1(Base)
+  m_EditorClassIdentifier: 
+  _title: Solar Aura
+  _description: Creates a protective aura around the player.
+  _level: Level 1
+  _icon: {fileID: -1620803097451951628, guid: f9fa167fb3d117b4ca8e67a307b6742d, type: 3}
+  _nextLevelPrefab: {fileID: 11400000, guid: 8af95b680c067514192a6a5c01c70b47, type: 2}
+  _weaponPrefab: {fileID: 976673119311795165, guid: a2a2d6805d259764ba7196d2f8e68ac8, type: 3}

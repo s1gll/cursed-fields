@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d52cf4df9663ecd43b1cbfbe5d63d9cb, type: 3}
+  m_Name: Knife Upgrade Lvl 2
+  m_EditorClassIdentifier: 
+  _title: Knife
+  _description: +2 knife damage.
+  _level: Level 2
+  _icon: {fileID: 21300000, guid: 0a1aa2ce8d26de341a3e5fa4fe968a66, type: 3}
+  _nextLevelPrefab: {fileID: 11400000, guid: 281407c56e523384c920f880c3ad3515, type: 2}
+  _weaponScriptableObject: {fileID: 11400000, guid: fa5e9818ff3cb564d84d1ee693a4e516, type: 2}
+  _targetWeaponClassName: KnifeWeapon

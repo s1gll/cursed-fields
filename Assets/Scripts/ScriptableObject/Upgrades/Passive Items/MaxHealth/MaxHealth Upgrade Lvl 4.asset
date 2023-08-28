@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cfff9fba5a286740b886fbba19c5aec, type: 3}
+  m_Name: MaxHealth Upgrade Lvl 4
+  m_EditorClassIdentifier: 
+  _title: Max Health
+  _description: Increases maximum health by 10%
+  _level: Level 4
+  _icon: {fileID: 948013957827415202, guid: 6160e37126a84274586e2f5778ddd2c6, type: 3}
+  _nextLevelPrefab: {fileID: 11400000, guid: a20e380a4bbe8014abbe9b18b93c33a6, type: 2}
+  _passiveItemScriptableObject: {fileID: 11400000, guid: 3079f73970b135543b1b0b8dd69f0b8b, type: 2}
+  _targetPassiveItemClassName: MaxHealth

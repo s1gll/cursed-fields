@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb13a105b9745be4199e48ac7f652480, type: 3}
+  m_Name: FuryCrystal Upgrade Lvl 1(Base)
+  m_EditorClassIdentifier: 
+  _title: Fury Crystal
+  _description: Increases all damage dealt.
+  _level: Level 1
+  _icon: {fileID: 1557979988, guid: a47294d8f066c634d90ee371916313ff, type: 3}
+  _nextLevelPrefab: {fileID: 11400000, guid: 72934fbd5f3d37148a9cce8d6740576e, type: 2}
+  _passiveItemPrefab: {fileID: 6671454339865196532, guid: da0db1cda9b946f43a3dfa35c0cbc2c5, type: 3}

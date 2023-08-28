@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d52cf4df9663ecd43b1cbfbe5d63d9cb, type: 3}
+  m_Name: SolarAura Upgrade Lvl 3
+  m_EditorClassIdentifier: 
+  _title: Solar Aura
+  _description: Reduces cooldown by 0.2.
+  _level: Level 3
+  _icon: {fileID: -1620803097451951628, guid: f9fa167fb3d117b4ca8e67a307b6742d, type: 3}
+  _nextLevelPrefab: {fileID: 11400000, guid: a47148d419460cc42ae49cf8ca73dab1, type: 2}
+  _weaponScriptableObject: {fileID: 11400000, guid: b7093c662d9bf2447ad955e65437946d, type: 2}
+  _targetWeaponClassName: SolarAuraLauncer
