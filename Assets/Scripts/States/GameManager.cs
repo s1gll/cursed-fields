@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private AudioSource _playerDiedSound;
     [SerializeField] private AudioSource _mainMusic;
 
+
     [SerializeField] private GameState _currentState = GameState.Gameplay;
 
     private void Update()
@@ -53,7 +54,7 @@ public class GameManager : MonoBehaviour
         _stopwatch.UpdateStopwatch();
         if (_stopwatch.IsTimeUp())
         {
-            ChangeState(GameState.GameOver);
+            ChangeState(GameState.Victory);
         }
     }
 
@@ -114,6 +115,10 @@ public class GameManager : MonoBehaviour
                 ChangeState(GameState.Gameplay);
             }
         }
+    }
+    public static void GenerateFloatingText(string text, Transform target,float duration=1f,float speed=1f)
+    {
+       
     }
 
     public void ChangeState(GameState newState)

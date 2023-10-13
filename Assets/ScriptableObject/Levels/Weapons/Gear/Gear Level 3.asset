@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44ccc2e3eaa4cf5438f971179c517a92, type: 3}
+  m_Name: Gear Level 3
+  m_EditorClassIdentifier: 
+  _shootInterval: 3
+  _shootSpeed: 0
+  _waitTime: 0.25
+  _projectileCount: 1
+  _projectilePrefab: {fileID: 6456334342183530593, guid: ae1ee0d372c69aa40a8baca3e9174f5f, type: 3}

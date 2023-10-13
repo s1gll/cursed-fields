@@ -87,7 +87,7 @@ public class UpgradeManager : MonoBehaviour
     public void OnUpgradeApplied(Upgrade appliedUpgrade)
     {
 
-        _upgradeAppliedSound.Play();
+        Helper.PlaySound(_upgradeAppliedSound);
         _uiManager.Hide();
         _gameManager.ChangeState(GameState.Gameplay);
         _availableUpgrades.Remove(appliedUpgrade);
@@ -118,7 +118,7 @@ public class UpgradeManager : MonoBehaviour
         {
             _selectedWeaponLevelUpgrades.Add(appliedUpgrade);
 
-              if (weaponLevelUpgraded.NextLevelPrefab != null && weaponLevelUpgraded.NextLevelPrefab is WeaponLevelUpgrade weaponLevelUpgrade)
+            if (weaponLevelUpgraded.NextLevelPrefab != null && weaponLevelUpgraded.NextLevelPrefab is WeaponLevelUpgrade weaponLevelUpgrade)
             {
                 _selectedWeaponLevelUpgrades.Add(weaponLevelUpgrade);
                 _availableUpgrades.Add(weaponLevelUpgrade);

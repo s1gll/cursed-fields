@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2665888595472359978}
   - component: {fileID: 7809338349624727936}
   - component: {fileID: 2992993523776863401}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fireball Level 3
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rbody: {fileID: 7809338349624727936}
-  _damage: 25
+  _damage: 40
   _destroyOnHit: 1
   _destroyAfterTime: 1
   _destroyAfterSeconds: 3

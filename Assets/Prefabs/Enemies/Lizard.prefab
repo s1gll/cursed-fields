@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: 3
-  _maxHealth: 17
+  _maxHealth: 18
   _enemyHit: {fileID: 7373811401847522464}
   pickup: {fileID: 9052525477288365320, guid: 31abf4111e4010c49861b676a4170fba, type: 3}
   OnDied:
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f347e2ea2f553e42aba014b2ab31564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _knockbackForce: 1.5
+  _knockbackForce: 1.2
   _knockbackDuration: 0.2
 --- !u!114 &719784029775861719
 MonoBehaviour:

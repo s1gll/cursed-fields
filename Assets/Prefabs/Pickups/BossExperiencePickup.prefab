@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6794778265228519489}
   - component: {fileID: -449074719506769726}
   - component: {fileID: 535144776067414161}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BossExperiencePickup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b49b9f3486307f94c9982f5932443adf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _experience: 300
+  _experience: 100
 --- !u!212 &6794778265228519489
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -166,10 +166,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f86575118ca0ece489fff8fa90a6d52c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 3
-  _maxHealth: 7
+  _moveSpeed: 2.5
+  _maxHealth: 5
   _enemyHit: {fileID: 6146778844123065421}
-  pickup: {fileID: 9052525477288365320, guid: 31abf4111e4010c49861b676a4170fba, type: 3}
+  pickup: {fileID: 9052525477288365320, guid: 81688bc7893fbef46b81cd7639fdf18c, type: 3}
   OnDied:
     m_PersistentCalls:
       m_Calls: []

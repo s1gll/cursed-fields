@@ -38,7 +38,7 @@ public class HUD : MonoBehaviour
 
   private void UpdateUpgradeIcons(List<Upgrade> upgrades, Transform parent)
 {
-    // Очищаем дочерние объекты только один раз перед добавлением новых иконок
+   
     foreach (Transform child in parent)
     {
         Destroy(child.gameObject);

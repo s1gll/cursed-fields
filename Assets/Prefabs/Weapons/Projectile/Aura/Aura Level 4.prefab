@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 497729008218017588}
   - component: {fileID: 5158827735834887198}
   - component: {fileID: 916661348462356618}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Aura Level 4
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -81,7 +81,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rbody: {fileID: 0}
-  _damage: 40
+  _damage: 12
   _destroyOnHit: 0
   _destroyAfterTime: 1
-  _destroyAfterSeconds: 1
+  _destroyAfterSeconds: 1.2

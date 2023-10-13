@@ -5,13 +5,13 @@ public class PlayerStats : MonoBehaviour, IDamageable
 {
     [SerializeField] private Image _healthBar;
     [SerializeField] protected float moveSpeed;
-    [SerializeField] private float _maxHealth;
+    [SerializeField] private float _maxHealth=100;
     [SerializeField] private float _regeneration = 1;
     [SerializeField] private float _might = 1;
     [SerializeField] private float _speedReaction = 1;
     [SerializeField] private float _projectileSpeed = 1;
-
-    [SerializeField] private float _health;
+    [SerializeField] private float _magnet;
+    private float _health;
 
     private bool _isInvulnerable = false;
     private float _invulnerabilityTimer = 0f;
@@ -26,9 +26,8 @@ public class PlayerStats : MonoBehaviour, IDamageable
     public float ProjectileSpeed => _projectileSpeed;
     public float Might => _might;
     public float Health => _health;
+    public float Magnet => _magnet;
     public bool IsDead => Health <= 0;
-
-
 
 
     private void Awake()
@@ -73,8 +72,7 @@ public class PlayerStats : MonoBehaviour, IDamageable
 
             _isInvulnerable = true;
             _invulnerabilityTimer = _invulnerabilityDuration;
-            _playerHurt.Stop();
-            _playerHurt.Play();
+            Helper.PlaySound(_playerHurt);
         }
 
     }
@@ -102,15 +100,13 @@ public class PlayerStats : MonoBehaviour, IDamageable
     {
         _regeneration += multiplayer;
     }
-    public void IncreaseProjectileSpeed(float multiplayer)
-    {
-        _projectileSpeed *= multiplayer;
-
-    }
     public void IncreaseSpeedReaction(float multiplayer)
     {
         _speedReaction *= multiplayer;
     }
-
+    public void IncreaseMagnet(float multiplayer)
+    {
+        _magnet *= multiplayer;
+    }
 
 }

@@ -9,7 +9,6 @@ public abstract class Weapon : MonoBehaviour
     private float _shootTimer;
 
     protected int projectileCount;
-
     protected Damager projectilePrefab;
     [SerializeField] private AudioSource _projectileSound;
     [SerializeField] private WeaponScriptableObject _weaponData;
@@ -33,12 +32,13 @@ public abstract class Weapon : MonoBehaviour
 
             _shootTimer = 0;
             StartCoroutine(AttackProcess());
-          
+
         }
     }
     protected void FireProjectile()
     {
-        _projectileSound.Play();
+
+        Helper.PlaySound(_projectileSound);
     }
     public void UpdateWeaponScriptableObject(WeaponScriptableObject newWeaponData)
     {
@@ -46,6 +46,7 @@ public abstract class Weapon : MonoBehaviour
         shootInterval = _weaponData.ShootInterval;
         shootSpeed = _weaponData.ShootSpeed;
         waitTime = _weaponData.WaitTime;
+
         projectileCount = _weaponData.ProjectileCount;
         projectilePrefab = _weaponData.ProjectilePrefab;
     }

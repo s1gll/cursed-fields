@@ -8,23 +8,23 @@ public class SolarAura : Damager
     {
         _markedEnemies = new List<GameObject>();
     }
-    protected override void OnTriggerEnter2D(Collider2D colission)
+    protected override void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (colission.CompareTag("Enemy") && !_markedEnemies.Contains(colission.gameObject))
+        if (collision.CompareTag("Enemy") && !_markedEnemies.Contains(collision.gameObject))
         {
-            EnemyBase enemy = colission.GetComponent<EnemyBase>();
+            EnemyBase enemy = collision.GetComponent<EnemyBase>();
             enemy.TakeDamage(GetCurrentDamage());
 
-            _markedEnemies.Add(colission.gameObject);
+            _markedEnemies.Add(collision.gameObject);
         }
-        else if (colission.CompareTag("Prop"))
+        else if (collision.CompareTag("Prop"))
         {
-            if (colission.gameObject.TryGetComponent(out BreakableProp breakable) && !_markedEnemies.Contains(colission.gameObject))
+            if (collision.gameObject.TryGetComponent(out BreakableProp breakable) && !_markedEnemies.Contains(collision.gameObject))
             {
                 breakable.TakeDamage(GetCurrentDamage());
 
-                _markedEnemies.Add(colission.gameObject);
+                _markedEnemies.Add(collision.gameObject);
             }
         }
         if (_destroyAfterTime)

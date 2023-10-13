@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d52cf4df9663ecd43b1cbfbe5d63d9cb, type: 3}
+  m_Name: Gear Upgrade Lvl 4
+  m_EditorClassIdentifier: 
+  _title: Gear
+  _description: +2 gear damage.
+  _level: Level 4
+  _icon: {fileID: 1961121192, guid: 7be933ffaa416b746974ee21807a2a2b, type: 3}
+  _nextLevelPrefab: {fileID: 11400000, guid: f5b7066051d199346a37b1742f303a58, type: 2}
+  _weaponScriptableObject: {fileID: 11400000, guid: 32b4e38fed64e0a4495827b203e55649, type: 2}
+  _targetWeaponClassName: GearLaunch
