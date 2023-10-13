@@ -19,7 +19,7 @@ public class WhipLaunch : Weapon
 
         Vector3 horizontalDirection = new Vector3(playerDirection.x, 0f, 0f).normalized;
 
-        if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.W)&&Input.GetKey(KeyCode.S) ||Input.GetKey(KeyCode.W)||Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.D)||Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.W)&&Input.GetKey(KeyCode.S) ||Input.GetKey(KeyCode.W)||Input.GetKey(KeyCode.S))
         {
             horizontalDirection = Vector3.right;
         }

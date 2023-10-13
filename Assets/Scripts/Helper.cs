@@ -1,5 +1,6 @@
 using UnityEngine;
 
+
 public static class Helper
 {
     public static Enemy FindClosestEnemy(EnemiesSpawner spawner, Transform transform)
@@ -17,4 +18,10 @@ public static class Helper
         }
         return clossetEnemy;
     }
+    public static void PlaySound(AudioSource audioSource)
+    {
+        audioSource.Stop();
+        audioSource.Play();
+        
+    } 
 }

@@ -288,10 +288,10 @@ RectTransform:
   - {fileID: 2121574352}
   - {fileID: 1983701067}
   - {fileID: 644662974}
+  - {fileID: 1730633781}
   - {fileID: 68578638}
   - {fileID: 696340644}
   - {fileID: 1470483422}
-  - {fileID: 1730633781}
   - {fileID: 1211093884510924393}
   m_Father: {fileID: 436067675}
   m_RootOrder: -1
@@ -776,8 +776,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -630.25, y: -429.875}
-  m_SizeDelta: {x: 654.6075, y: 116.25}
+  m_AnchoredPosition: {x: -631.47, y: -429.875}
+  m_SizeDelta: {x: 657.05, y: 116.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &644662975
 MonoBehaviour:
@@ -1286,7 +1286,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: V0.01
+  m_Text: V0.02
 --- !u!222 &1470483424
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1525,8 +1525,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -631.81, y: -429.87}
-  m_SizeDelta: {x: 657.73, y: 116.25}
+  m_AnchoredPosition: {x: -629.99, y: -429.87}
+  m_SizeDelta: {x: 654.09, y: 116.24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1730633782
 MonoBehaviour:
@@ -2187,19 +2187,23 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2314585394640387419, guid: 6f22db36c76d5db44a9fb357b2f73949, type: 3}
-      propertyPath: m_AnchorMax.x
+    - target: {fileID: 1069507478720651966, guid: 6f22db36c76d5db44a9fb357b2f73949, type: 3}
+      propertyPath: m_MinValue
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1451373643509287681, guid: 6f22db36c76d5db44a9fb357b2f73949, type: 3}
+      propertyPath: m_Value
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1451373643509287681, guid: 6f22db36c76d5db44a9fb357b2f73949, type: 3}
+      propertyPath: m_MinValue
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2314585394640387419, guid: 6f22db36c76d5db44a9fb357b2f73949, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598821461362468654, guid: 6f22db36c76d5db44a9fb357b2f73949, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4598821461362468654, guid: 6f22db36c76d5db44a9fb357b2f73949, type: 3}
+    - target: {fileID: 2314585394640387419, guid: 6f22db36c76d5db44a9fb357b2f73949, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
@@ -2212,18 +2216,6 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5006547957495413939, guid: 6f22db36c76d5db44a9fb357b2f73949, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5199774907709337680, guid: 6f22db36c76d5db44a9fb357b2f73949, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5199774907709337680, guid: 6f22db36c76d5db44a9fb357b2f73949, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5199774907709337680, guid: 6f22db36c76d5db44a9fb357b2f73949, type: 3}
       propertyPath: m_AnchorMin.x
       value: 1
       objectReference: {fileID: 0}
@@ -2315,10 +2307,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 696340645}
-    - target: {fileID: 5724521659083880547, guid: 6f22db36c76d5db44a9fb357b2f73949, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Play
-      objectReference: {fileID: 0}
     - target: {fileID: 8449296168663236058, guid: 6f22db36c76d5db44a9fb357b2f73949, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1

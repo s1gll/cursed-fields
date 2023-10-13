@@ -18,7 +18,8 @@ public class EnemyBase : MonoBehaviour, IDamageable
     protected virtual void Start()
     {
         target = FindObjectOfType<PlayerMovement>().transform;
-        _flashSpriteEffect=GetComponent<FlashSpriteEffect>();
+        _flashSpriteEffect = GetComponent<FlashSpriteEffect>();
+
     }
 
     public bool IsDead => Health <= 0;
@@ -29,35 +30,43 @@ public class EnemyBase : MonoBehaviour, IDamageable
     public void TakeDamage(float damage)
     {
         Health -= damage;
-_enemyHit.pitch=Random.Range(0.9f,1.1f);
- _enemyHit.Stop();
-        _enemyHit.Play();
+        
+        if (damage > 0)
+        {
+            FloatingText.GenerateFloatingText(Mathf.FloorToInt(damage).ToString(), transform);
+        }
+
+        _enemyHit.pitch = Random.Range(0.9f, 1.1f);
+        Helper.PlaySound(_enemyHit);
+
         Health = Mathf.Clamp(Health, 0, _maxHealth);
-       _flashSpriteEffect.Flash();
+
+        _flashSpriteEffect.Flash();
+
         OnTakeDamage.Invoke();
+
         if (IsDead)
         {
             OnDead();
         }
-        
-    }
-protected virtual void CheckForFlipping(Vector2 direction)
-{
-    bool movingLeft = direction.x < 0;
-    bool movingRight = direction.x > 0;
 
-    float commonScaleX = Mathf.Abs(transform.localScale.x); 
+    }
+    protected virtual void CheckForFlipping(Vector2 direction)
+    {
+        bool movingLeft = direction.x < 0;
+        bool movingRight = direction.x > 0;
 
-    if (movingLeft)
-    {
-        transform.localScale = new Vector3(-commonScaleX, transform.localScale.y);
+        float commonScaleX = Mathf.Abs(transform.localScale.x);
+
+        if (movingLeft)
+        {
+            transform.localScale = new Vector3(-commonScaleX, transform.localScale.y);
+        }
+        else if (movingRight)
+        {
+            transform.localScale = new Vector3(commonScaleX, transform.localScale.y);
+        }
     }
-    else if (movingRight)
-    {
-        transform.localScale = new Vector3(commonScaleX, transform.localScale.y);
-    }
-}
-  
 
     protected virtual void OnDead()
     {

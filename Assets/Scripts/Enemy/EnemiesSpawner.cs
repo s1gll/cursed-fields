@@ -1,31 +1,28 @@
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class EnemiesSpawner : MonoBehaviour
 {
     [SerializeField] private float _spawnRadius;
     [SerializeField] private Transform _center;
     [SerializeField] private float _maxDistanceFromPlayer = 30f;
+     [SerializeField] private int _initialEnemiesInFields = 5;
+    [SerializeField] private int _enemiesInFieldsIncrement = 2;
+
+    private int _enemiesInFields = 5;
     [SerializeField] private Transform[] _spawnPoints;
 
-    private int _killCount = 0;
     [SerializeField] private Text killCountUIText;
 
-    [System.Serializable]
-    class Wave
-    {
-        public Enemy enemyPrefab;
-        public int countMin, countMax;
-    }
-
-    [SerializeField] private Wave[] waves;
+    [SerializeField] private WaveScriptableObject[] _waves;
     private int _waveIndex = 0;
-    private bool HasWaves => _waveIndex < waves.Length;
+    private bool HasWaves => _waveIndex < _waves.Length;
+
+    private int _killCount = 0;
+    public List<Enemy> SpawnedEnemies { get; } = new List<Enemy>();
 
     [SerializeField] private PlayerMovement _player;
-
-    public List<Enemy> SpawnedEnemies { get; } = new List<Enemy>();
 
     private void Start()
     {
@@ -52,17 +49,20 @@ public class EnemiesSpawner : MonoBehaviour
         {
             Spawn();
             _waveIndex++;
+           if (_waveIndex % _initialEnemiesInFields == 0)
+            {
+                _initialEnemiesInFields += _enemiesInFieldsIncrement; 
+            }
         }
     }
 
     private void Spawn()
     {
-        var currentWave = waves[_waveIndex];
-        int count = Random.Range(currentWave.countMin, currentWave.countMax + 1);
-        for (int i = 0; i < count; i++)
+        var currentWave = _waves[_waveIndex];
+        for (int i = 0; i < currentWave.EnemyCount; i++)
         {
             var position = _center.position + (Vector3)Random.insideUnitCircle * _spawnRadius;
-            var enemy = Instantiate(currentWave.enemyPrefab, position, Quaternion.identity);
+            var enemy = Instantiate(currentWave.EnemyPrefab, position, Quaternion.identity);
             SpawnedEnemies.Add(enemy);
 
             enemy.OnDied.AddListener(() => OnEnemyDead(enemy));
@@ -76,7 +76,7 @@ public class EnemiesSpawner : MonoBehaviour
         SpawnedEnemies.Remove(enemy);
 
 
-        if (SpawnedEnemies.Count <= 8 && HasWaves)
+        if (SpawnedEnemies.Count <= _enemiesInFields && HasWaves)
         {
             SpawnNextWave();
         }
@@ -87,4 +87,3 @@ public class EnemiesSpawner : MonoBehaviour
         killCountUIText.text = "Killed Enemies: " + _killCount.ToString();
     }
 }
-

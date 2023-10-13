@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: 4
-  _maxHealth: 120
+  _maxHealth: 500
   _enemyHit: {fileID: 3659598757401063090}
   pickup: {fileID: 9052525477288365320, guid: 3962923b0a2272e4c95ec7891f74cd1c, type: 3}
   OnDied:

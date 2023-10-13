@@ -16,7 +16,7 @@ public class BreakableProp : MonoBehaviour, IDamageable
     public void TakeDamage(float damage)
     {
         _health -= damage;
-          _breakSound.Play();
+        Helper.PlaySound(_breakSound);
         _flashSpriteEffect.Flash();
         if (_health <= 0)
         {

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1677996844289911682}
   - component: {fileID: 8904792845033223522}
   - component: {fileID: 7742589995807268054}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Magicball Level 3
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rbody: {fileID: 7742589995807268054}
-  _damage: 26
+  _damage: 15
   _destroyOnHit: 1
   _destroyAfterTime: 1
   _destroyAfterSeconds: 3
